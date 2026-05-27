@@ -1,0 +1,28 @@
+{
+  "eval_id": 8,
+  "eval_name": "forward-risk-portfolio-simulation",
+  "variant": "without_skill",
+  "pass_rate": 0.75,
+  "expectations": [
+    {
+      "text": "Discusses Monte Carlo simulation or stochastic modeling",
+      "passed": true,
+      "evidence": "Found concepts: monte carlo, simulation"
+    },
+    {
+      "text": "Mentions capital market assumptions or expected return estimation",
+      "passed": true,
+      "evidence": "Found concepts: capital market assumption, mention"
+    },
+    {
+      "text": "Addresses probability of meeting the return target over the time horizon",
+      "passed": false,
+      "evidence": "Missing concepts: address; found: probability"
+    },
+    {
+      "text": "Focus is on forward projection methodology, not historical analysis",
+      "passed": true,
+      "evidence": "Forward: 12, historical: 5"
+    }
+  ]
+}

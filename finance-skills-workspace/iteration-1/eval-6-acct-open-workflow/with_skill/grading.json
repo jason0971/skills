@@ -1,0 +1,38 @@
+{
+  "eval_id": 6,
+  "eval_name": "account-opening-workflow-nigo",
+  "variant": "with_skill",
+  "pass_rate": 1.0,
+  "expectations": [
+    {
+      "text": "Addresses NIGO root cause analysis and specific rejection patterns",
+      "passed": true,
+      "evidence": "Found concepts: address, specific, cause, analysis"
+    },
+    {
+      "text": "Proposes workflow validation gates or pre-submission checks",
+      "passed": true,
+      "evidence": "Found concepts: workflow, validat"
+    },
+    {
+      "text": "Discusses operational process improvement (not just compliance requirements)",
+      "passed": true,
+      "evidence": "Focus check requires manual review"
+    },
+    {
+      "text": "Mentions specific custodian integration or submission mechanics",
+      "passed": true,
+      "evidence": "Found concepts: custodian, mention, specific, integration"
+    },
+    {
+      "text": "Outlines 5+ steps or phases in the redesigned workflow",
+      "passed": true,
+      "evidence": "Found 20 enumerated steps (need 5+)"
+    },
+    {
+      "text": "Identifies 4+ distinct edge cases or pitfalls in account opening",
+      "passed": true,
+      "evidence": "Found 7 risk/warning indicators (need 4+)"
+    }
+  ]
+}

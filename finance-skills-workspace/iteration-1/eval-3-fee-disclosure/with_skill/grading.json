@@ -1,0 +1,38 @@
+{
+  "eval_id": 3,
+  "eval_name": "fee-disclosure-form-adv",
+  "variant": "with_skill",
+  "pass_rate": 0.8333333333333334,
+  "expectations": [
+    {
+      "text": "References Form ADV Part 2A Item 5",
+      "passed": true,
+      "evidence": "Found concepts: form adv, item 5, form adv"
+    },
+    {
+      "text": "Addresses 12b-1 fee disclosure as indirect compensation or conflict",
+      "passed": true,
+      "evidence": "Found concepts: conflict, address"
+    },
+    {
+      "text": "Discusses how to present tiered fee schedules in disclosure documents",
+      "passed": true,
+      "evidence": "Found concepts: tiered, present, discuss"
+    },
+    {
+      "text": "Provides 3+ specific rule numbers or regulatory citations",
+      "passed": true,
+      "evidence": "Found 3 citations (need 3+): ['form adv', 'form availability', 'form crs']"
+    },
+    {
+      "text": "Identifies 3+ distinct edge cases or pitfalls in fee disclosure",
+      "passed": true,
+      "evidence": "Found 4 risk/warning indicators (need 3+)"
+    },
+    {
+      "text": "Focuses on regulatory disclosure requirements, not billing system implementation",
+      "passed": false,
+      "evidence": "Billing terms: 5, disclosure terms: 11"
+    }
+  ]
+}

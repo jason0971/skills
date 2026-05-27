@@ -1,0 +1,33 @@
+{
+  "eval_id": 10,
+  "eval_name": "workflow-automation-approval-chains",
+  "variant": "without_skill",
+  "pass_rate": 1.0,
+  "expectations": [
+    {
+      "text": "Designs multi-level approval chain with different thresholds by request type",
+      "passed": true,
+      "evidence": "Found concepts: approval"
+    },
+    {
+      "text": "Addresses SLA targets and escalation rules for aging items",
+      "passed": true,
+      "evidence": "Found concepts: address"
+    },
+    {
+      "text": "Discusses task routing or state machine modeling",
+      "passed": true,
+      "evidence": "Found concepts: discuss"
+    },
+    {
+      "text": "Outlines 5+ steps or phases in the workflow design",
+      "passed": true,
+      "evidence": "Found 12 enumerated steps (need 5+)"
+    },
+    {
+      "text": "Focus is on approval chains and routing, not end-to-end STP rate optimization",
+      "passed": true,
+      "evidence": "Focus check requires manual review"
+    }
+  ]
+}

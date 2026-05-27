@@ -1,0 +1,33 @@
+{
+  "eval_id": 2,
+  "eval_name": "fiduciary-proprietary-fund-conflict",
+  "variant": "without_skill",
+  "pass_rate": 0.8,
+  "expectations": [
+    {
+      "text": "Applies IA Act Section 206 fiduciary framework",
+      "passed": false,
+      "evidence": "Missing concepts: section 206; found: ia act"
+    },
+    {
+      "text": "Analyzes both duty of care and duty of loyalty",
+      "passed": true,
+      "evidence": "Found concepts: duty of care, duty of loyalty"
+    },
+    {
+      "text": "Identifies proprietary fund as conflict of interest",
+      "passed": true,
+      "evidence": "Found concepts: proprietary, conflict"
+    },
+    {
+      "text": "Discusses cost differential materiality",
+      "passed": true,
+      "evidence": "Found concepts: cost, differential, discuss"
+    },
+    {
+      "text": "Does not apply FINRA suitability as primary standard",
+      "passed": true,
+      "evidence": "Absence check passed (manual review recommended)"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 7,
+  "eval_name": "historical-risk-fund-assessment",
+  "variant": "without_skill",
+  "pass_rate": 0.6,
+  "expectations": [
+    {
+      "text": "Calculates or discusses Sharpe ratio using provided return and volatility data",
+      "passed": true,
+      "evidence": "Found concepts: sharpe, discuss, calculat"
+    },
+    {
+      "text": "Analyzes the -32% max drawdown in context (severity, recovery)",
+      "passed": true,
+      "evidence": "Found concepts: drawdown"
+    },
+    {
+      "text": "Mentions Sortino ratio or downside risk metrics",
+      "passed": false,
+      "evidence": "Missing concepts: mention; found: sortino"
+    },
+    {
+      "text": "Provides 3+ specific risk metrics with explanations",
+      "passed": true,
+      "evidence": "Found 5 risk/warning indicators (need 3+)"
+    },
+    {
+      "text": "Analysis is grounded in historical/realized data, not forward projections",
+      "passed": false,
+      "evidence": "Historical: 1, forward: 1"
+    }
+  ]
+}
