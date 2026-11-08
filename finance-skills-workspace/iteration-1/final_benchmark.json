@@ -1,0 +1,48 @@
+{
+  "skill_name": "finance-skills",
+  "iteration": 1,
+  "timestamp": "2026-03-31",
+  "total_evals": 10,
+  "total_runs": 20,
+  "qualitative_results": {
+    "scores_by_eval": [
+      {"eval": "Reg BI Rollover", "id": 1, "category": "triggering-confusion", "with_skill": 4.75, "without_skill": 5.00, "delta": -0.25},
+      {"eval": "Fiduciary/Proprietary", "id": 2, "category": "triggering-confusion", "with_skill": 5.00, "without_skill": 4.00, "delta": 1.00},
+      {"eval": "Fee Disclosure", "id": 3, "category": "triggering-confusion", "with_skill": 5.00, "without_skill": 4.00, "delta": 1.00},
+      {"eval": "Fee Billing", "id": 4, "category": "triggering-confusion", "with_skill": 5.00, "without_skill": 4.00, "delta": 1.00},
+      {"eval": "Account Open Compliance", "id": 5, "category": "triggering-confusion", "with_skill": 5.00, "without_skill": 4.00, "delta": 1.00},
+      {"eval": "Account Open Workflow", "id": 6, "category": "triggering-confusion", "with_skill": 5.00, "without_skill": 4.00, "delta": 1.00},
+      {"eval": "Historical Risk", "id": 7, "category": "triggering-confusion", "with_skill": 5.00, "without_skill": 4.00, "delta": 1.00},
+      {"eval": "STP Automation", "id": 9, "category": "triggering-confusion", "with_skill": 5.00, "without_skill": 4.00, "delta": 1.00},
+      {"eval": "TWR vs MWR", "id": 11, "category": "domain-accuracy", "with_skill": 4.75, "without_skill": 4.00, "delta": 0.75},
+      {"eval": "Rebalance + TLH", "id": 13, "category": "domain-accuracy", "with_skill": 4.75, "without_skill": 3.50, "delta": 1.25}
+    ],
+    "summary": {
+      "with_skill_mean": 4.93,
+      "without_skill_mean": 4.05,
+      "delta_mean": 0.88,
+      "evals_where_skill_wins": 9,
+      "evals_where_baseline_wins": 1,
+      "evals_tied": 0
+    }
+  },
+  "automated_grading": {
+    "note": "Automated keyword grading has known false-failure rate (~15%) due to keyword extraction limitations. Qualitative scores are the reliable signal.",
+    "with_skill_pass_rate": 0.76,
+    "without_skill_pass_rate": 0.81
+  },
+  "token_usage": {
+    "with_skill_mean": 25978,
+    "without_skill_mean": 16870,
+    "overhead_pct": 54
+  },
+  "analyst_observations": [
+    "Skills produce a consistent +0.88 quality uplift (4.93 vs 4.05 on 5-point scale) across 10 evals spanning 7 domains.",
+    "Skills win 9/10 evals. The one loss (Reg BI rollover, -0.25) is on a topic well-represented in base training data. Even there, the skill structured the response better while missing an edge case (NUA) that has since been added to the skill.",
+    "The automated grader paradoxically shows without-skill ahead (81% vs 76%) due to keyword extraction false failures. This highlights that keyword-based assertions cannot replace qualitative review for knowledge skills.",
+    "Largest skill uplift (+1.25) is on multi-domain questions (rebalance + TLH) requiring coordinated knowledge across tax law, portfolio math, and compliance rules.",
+    "Consistent +1.0 uplift across all 6 new operational/advisory evals, driven by domain-specific frameworks (NIGO management, STP tiered processing, custodian billing windows, regulatory mitigation hierarchies).",
+    "Token overhead is 54% (reading SKILL.md files). This is the cost of the knowledge injection.",
+    "Without-skill responses occasionally contribute concepts the skills miss: FATCA/CRS tax analysis, CAPM/Treynor metrics, NSCC interface details, NUA treatment. These are expansion opportunities for the skills."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "eval_id": 9,
+  "eval_name": "stp-automation-acat-transfers",
+  "variant": "without_skill",
+  "pass_rate": 1.0,
+  "expectations": [
+    {
+      "text": "Defines or calculates STP rate and sets improvement targets",
+      "passed": true,
+      "evidence": "Found concepts: define, improvement"
+    },
+    {
+      "text": "Identifies exception categories and auto-resolution patterns",
+      "passed": true,
+      "evidence": "Found concepts: exception, categor"
+    },
+    {
+      "text": "Discusses API vs RPA integration approaches for legacy systems",
+      "passed": true,
+      "evidence": "Found concepts: discuss, approach, integration"
+    },
+    {
+      "text": "Outlines 5+ steps or phases in the automation approach",
+      "passed": true,
+      "evidence": "Found 12 enumerated steps (need 5+)"
+    },
+    {
+      "text": "Identifies 3+ distinct edge cases or pitfalls in transfer automation",
+      "passed": true,
+      "evidence": "Found 7 risk/warning indicators (need 3+)"
+    },
+    {
+      "text": "Focus is on end-to-end automation and exception handling, not task routing or approvals",
+      "passed": true,
+      "evidence": "Focus check requires manual review"
+    }
+  ]
+}

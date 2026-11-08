@@ -1,0 +1,33 @@
+{
+  "eval_id": 13,
+  "eval_name": "wm-rebalance-with-tlh-coordination",
+  "variant": "without_skill",
+  "pass_rate": 0.8,
+  "expectations": [
+    {
+      "text": "Identifies that the 5% band has been breached (68% > 65%)",
+      "passed": true,
+      "evidence": "Found concepts: band, breach"
+    },
+    {
+      "text": "Calculates approximate rebalance trade size (~$64K)",
+      "passed": true,
+      "evidence": "Found rebalance amount near $64K: $60"
+    },
+    {
+      "text": "Recommends harvesting the $15K loss as part of the rebalance",
+      "passed": true,
+      "evidence": "Found concepts: harvest"
+    },
+    {
+      "text": "Warns about wash-sale rules",
+      "passed": true,
+      "evidence": "Found concepts: wash-sale"
+    },
+    {
+      "text": "Mentions replacement security selection",
+      "passed": false,
+      "evidence": "Missing concepts: mention; found: replacement"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 1,
+  "eval_name": "regbi-rollover-recommendation",
+  "variant": "with_skill",
+  "pass_rate": 1.0,
+  "expectations": [
+    {
+      "text": "Mentions Reg BI by name",
+      "passed": true,
+      "evidence": "Found concepts: reg bi, mention"
+    },
+    {
+      "text": "Cites the four Reg BI obligations",
+      "passed": true,
+      "evidence": "Found concepts: reg bi, disclosure, obligation"
+    },
+    {
+      "text": "Mentions PTE 2020-02 or DOL prohibited transaction exemption",
+      "passed": true,
+      "evidence": "Found concepts: pte 2020-02, dol, mention"
+    },
+    {
+      "text": "Discusses reasonably available alternatives analysis",
+      "passed": true,
+      "evidence": "Found concepts: reasonably available alternative, discuss, analysis"
+    },
+    {
+      "text": "Does not incorrectly apply pure fiduciary standard without acknowledging BD capacity",
+      "passed": true,
+      "evidence": "Acknowledges BD capacity context"
+    }
+  ]
+}

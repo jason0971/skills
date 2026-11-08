@@ -1,0 +1,38 @@
+{
+  "eval_id": 4,
+  "eval_name": "fee-billing-quarterly-process",
+  "variant": "with_skill",
+  "pass_rate": 1.0,
+  "expectations": [
+    {
+      "text": "Provides proration formula or methodology for partial-quarter accounts",
+      "passed": true,
+      "evidence": "Found concepts: dol"
+    },
+    {
+      "text": "Addresses mid-quarter termination refund calculation",
+      "passed": true,
+      "evidence": "Found concepts: address"
+    },
+    {
+      "text": "Discusses billing system mechanics (custodian deduction, valuation dates)",
+      "passed": true,
+      "evidence": "Found concepts: discuss, custodian"
+    },
+    {
+      "text": "Identifies 4+ distinct edge cases or pitfalls in billing",
+      "passed": true,
+      "evidence": "Found 4 risk/warning indicators (need 4+)"
+    },
+    {
+      "text": "Outlines 5+ steps or phases in the billing process",
+      "passed": true,
+      "evidence": "Found 20 enumerated steps (need 5+)"
+    },
+    {
+      "text": "Focuses on operational billing implementation, not regulatory disclosure",
+      "passed": true,
+      "evidence": "Billing terms: 29, disclosure terms: 2"
+    }
+  ]
+}
